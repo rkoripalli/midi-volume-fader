@@ -44,7 +44,7 @@ public class Audio {
 }
 '@
 
-Import-Module -Force 'C:\Users\rkori\Documents\PeteBrown.PowerShellMidi.dll'
+Import-Module -Force "$PSScriptRoot\PeteBrown.PowerShellMidi.dll"
 
 $inputDevices = Get-MidiInputDeviceInformation
 foreach ($device in $inputDevices)
